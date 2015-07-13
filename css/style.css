@@ -5,6 +5,20 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+/* ---------- Color Classes START ---------- */
+
+.orange-color {
+  color: #f58320;
+}
+.dark-brown-color {
+  color: #816c65;
+}
+.light-orange-color {
+  color: #d3ad68;
+}
+
+/* ---------- Color Classes END ---------- */
+
 /* ---------- Animation Delays Classes START ---------- */
 
 .de1ms { -webkit-animation-delay: 0.1s;
@@ -257,8 +271,13 @@ body{
 	font-family: 'Marmelad-Regular';
 	text-transform: capitalize;
 }
-.logo span {
+/*.logo span {
   color: #fed200;
+}*/
+.logo-img {
+  width: auto;
+  height: 100px;
+  background: url("../images/logo.png") no-repeat;
 }
 .social-icons i:hover {
   opacity: 0.4;
@@ -347,7 +366,8 @@ text-decoration: none;
 	top: 28%;
 	left: 20%;
 	text-align: center;
-
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px;
 }
 .banner_center h1 {
 	color: #eee;
