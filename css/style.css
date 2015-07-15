@@ -275,7 +275,10 @@ body{
 	color: #fff;
 	display: block;
 	font-family: 'Marmelad-Regular';
+  font-family: 'Viga', sans-serif;
+  font-weight: bold;
 	text-transform: capitalize;
+  text-align: center;
 }
 /*.logo span {
   color: #fed200;
@@ -326,16 +329,19 @@ span.menu {
 	border-right: 1px solid #262e39;
 }
 .top-menu ul li a{
-text-decoration: none;
+  text-decoration: none;
   color: #fff;
   font-size: 1.2em;
   padding: 1.8em 1em;
-  background: rgba(20, 185, 215, 0.83);
+  /*background: rgba(20, 185, 215, 0.83);*/
+  /*background: rgba(211, 173, 104, 0.83);*/
+  background: rgba(129, 108, 101, 0.83);
   display: block;
   border-left: 1px solid #14B9D7;
   text-transform: capitalize;
   text-align: center;
-    font-family: 'Marmelad-Regular';
+  /*font-family: 'Marmelad-Regular';*/
+  font-family: 'OpenSans-Regular';
 }
 .top-menu ul li a:nth-child(1) {
 	border:none;
@@ -345,11 +351,13 @@ text-decoration: none;
 }
 
 .top-menu ul li a:hover {
-  background: rgba(254, 210, 0, 0.7);
+  /*background: rgba(254, 210, 0, 0.7);*/
+  background: rgba(245, 131, 32, 0.83);
   color: #fff;
 }
 .top-menu ul li a.active {
-  background: rgba(254, 210, 0, 0.7);
+  /*background: rgba(254, 210, 0, 0.7);*/
+  background: rgba(245, 131, 32, 0.83);
   color: #fff;
 }
 .banner-wrap {
@@ -508,9 +516,30 @@ text-decoration: none;
   background: url(../images/icons.png) no-repeat 1px -0px;
 }
 /*----------*/
+
+.flexslider {
+  background: none!important;
+  border: 0!important;
+}
+.flexslider .slides > li {
+  margin: 0 19px;
+}
+.flexslider .slides > li > img {
+  border-radius: 100%;
+  border: 6px solid #333;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.flexslider .slides > li >img:hover {
+  border-radius: 0;
+}
 .banner-bottom {
-  padding: 5em 0;
-    background: #eaedf2;
+  padding: 5em 0 0 0;
+    background: #444;
 }
 .welcome-top  {
   padding: 4em 0;
@@ -756,10 +785,12 @@ ul.social-contacts {
 .aboutus h3 {
     text-transform: capitalize;
   color: #394c53;
+  color: #d3ad68;
   text-align: center;
   font-size: 2.5em;
   font-weight: 400;
  font-family: 'Marmelad-Regular';
+ font-weight: bold;
   padding-bottom: 1.5em;
  }
 .about-grids1 {
@@ -905,10 +936,12 @@ a.button1:hover {
 .gallery h3{
  text-transform: capitalize;
   color: #394c53;
+  color: #d3ad68;
   text-align: center;
   font-size: 2.5em;
   font-weight: 400;
   font-family: 'Marmelad-Regular';
+  font-weight: bold;
   padding-bottom: 1.5em;
 }
 .work-grid{
@@ -1233,11 +1266,16 @@ h5.m_26 a:hover{
 .mail  h3 {
    text-transform: capitalize;
   color: #394c53;
+  color: #d3ad68;
   text-align: center;
   font-size: 2.5em;
   font-weight: 400;
   font-family: 'Marmelad-Regular';
+  font-weight: bold;
   padding-bottom: 1.5em;
+}
+.map-frame {
+  border: 4px solid #d3ad68;
 }
 .map iframe {
   width: 100%;
@@ -1250,6 +1288,7 @@ h5.m_26 a:hover{
 }
 .mail-grid-left h3{
   color: #000;
+  color: #f58320;
   font-size:2em;
   font-weight: 300;
   margin: 0;
@@ -1267,13 +1306,15 @@ h5.m_26 a:hover{
   display: block;
 }
 .mail-grid-left h4{
-	color:#000;
+  color:#000;
+	color:#816c65;
 	font-size:1.4em;
 	font-weight:600;
 	margin:0;
 }
 .mail-grid-left p{
   color: #000000;
+  color: #816c65;
   font-size: 1em;
   margin: 1em 0;
   line-height: 1.8em;
@@ -1296,6 +1337,7 @@ h5.m_26 a:hover{
   padding: .5em;
   margin-bottom: 1em;
   border: solid 1px #D5D4D4;
+  border: 1px solid #d3ad68;
   -webkit-appearance: none;
 }
 .contact-form textarea {
@@ -1306,6 +1348,7 @@ h5.m_26 a:hover{
   outline: none;
   padding: .5em;
   border: solid 1px #D5D4D4;
+  border: 1px solid #d3ad68;
   min-height: 150px;
   -webkit-appearance: none;
 }
@@ -1319,9 +1362,12 @@ h5.m_26 a:hover{
   margin: 0.5em 0 0 0;
   -webkit-appearance: none;
   background: #14b9d7;
+  background:#816c65;
  }
 .contact-form input[type="submit"]:hover{
-	background:#fed200;
+  background:#fed200;
+  background:#f58320;
+  
 	  transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;

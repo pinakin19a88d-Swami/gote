@@ -1,5 +1,5 @@
 <!--
-Au<!--
+Au
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -9,8 +9,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>V J Gote Brothers</title>
+<link href='http://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,7 +20,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
-<!---- start-smoth-scrolling---->
+<!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
  <script type="text/javascript">
@@ -29,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
-<!---End-smoth-scrolling---->
+<!---End-smoth-scrolling -->
  
 </head>
 <body>
@@ -118,81 +120,72 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 			<div class="banner-bottom">
 				<div class="container">
-				<ul id="flexiselDemo3">
-				 <li>
-					<div class="biseller-column">
-							<div class="banner-grid">
-							  <img src="images/p1.jpg" class="img-responsive" alt="/">
-							</div>
-					</div>
-				</li>
-				<li>
-					<div class="biseller-column">
-							<div class="banner-grid">
-							    <img src="images/p2.jpg" class="img-responsive" alt="/">
-							</div>
-						</div>
-				</li>
-				<li>
-					<div class="biseller-column">
-							<div class="banner-grid">
-							<img src="images/p3.jpg" class="img-responsive" alt="/">
-							</div>
-					</div>
-				</li>
-				<li>
-					<div class="biseller-column">
-							<div class="banner-grid">
-							 <img src="images/p4.jpg" class="img-responsive" alt="/">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="biseller-column">
-							<div class="banner-grid">
-							 <img src="images/p19.jpg" class="img-responsive" alt="/">
-						</div>
-					</div>
-				</li>
-	     	</ul>
-		  </div>
-			<script type="text/javascript">
-				 $(window).load(function() {
-					$("#flexiselDemo3").flexisel({
-						visibleItems:3,
-						animationSpeed: 1000,
-						autoPlay: true,
-						autoPlaySpeed: 3000,    		
-						pauseOnHover: true,
-						enableResponsiveBreakpoints: true,
-				    	responsiveBreakpoints: { 
-				    		portrait: { 
-				    			changePoint:480,
-				    			visibleItems:2
-				    		}, 
-				    		landscape: { 
-				    			changePoint:640,
-				    			visibleItems:2
-				    		},
-				    		tablet: { 
-				    			changePoint:768,
-				    			visibleItems:3
-				    		}
-				    	}
-				    });
-				    
-				});
-			   </script>
-			   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-				</div>
-				<div class="welcome-top">
+					<div class="flexslider">
+						<ul class="slides">
+							 <li>
+								<img src="images/thumbs/img1.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img2.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img3.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img4.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img5.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img6.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img7.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img8.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img9.jpg" alt="/">
+							</li>
+							<li>
+								<img src="images/thumbs/img10.jpg" alt="/">
+							</li>
+			     	</ul>
+		     	</div><!-- flexslider -->
+
+		     	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		     	<script type="text/javascript">
+		     		$(window).load(function() {
+						  $('.flexslider').flexslider({
+						    initDelay: 1000,
+						    animation: "slide",
+						    animationLoop: true,
+						    itemWidth: 150,
+						    itemMargin: 21,
+						    minItems: 5,
+						    maxItems: 10,
+						    easing: "swing",
+						    slideshowSpeed: 4000,
+						    animationSpeed: 1000,
+						    pauseOnHover: true,
+						    useCSS: true,
+						    touch: true,
+						    controlNav: true,
+						    directionNav: false
+						  });
+						});
+		     	</script>
+		     </div><!-- container -->
+	     					
+				<!--<div class="welcome-top">
 				<div class="container">
 				   <h3>Welcome !</h3>
 				   <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s around the world. </h6>
 				   <p>Dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore set.sit amet consectetuer Aadipiscing elit, sed diam nonummy. nonummy nibh euismod tincidunt ut laoreet dolore magna.orem ipsum dolor ser adipiscing elit, sed diam nonummy. Dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore set.sit amet consectetuer Aadipiscing elit, sed diam nonummy. nonummy nibh euismod tincidunt ut laoreet dolore magna.orem ipsum dolor ser adipiscing elit, sed diam nonummy.</p>
 			</div>
 		</div>
-		<!-- events -->
 	<div class="events">
 		<div class="container">
 		<div class="event-grids">
@@ -266,7 +259,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div>
-	<!--events -->
 	<div class="team">
 	   <div class="container">
 		 <div class="second-head">
@@ -349,7 +341,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"></div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="footer-section">
 						<div class="container">
 							<div class="footer-top">
