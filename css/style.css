@@ -257,11 +257,17 @@ body{
   -ms-background-size: cover;
   background-position: center!important;
 }
-.header-top {
-    padding: 2em 0 0;
-}
 .logo  {
-	float:left;
+	width: 600px;
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  
+  -webkit-box-shadow: 0 10px 6px -6px #000;
+     -moz-box-shadow: 0 10px 6px -6px #000;
+          box-shadow: 0 10px 6px -6px #000;
 }
 .logo a {
 	font-size: 4em;
