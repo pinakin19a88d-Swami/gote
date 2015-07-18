@@ -1432,8 +1432,8 @@ h5.m_26 a:hover{
 .aboutusNew ul {
   list-style: none;
 }
-.aboutWrap li,
-.aboutusNew li {
+.aboutWrap ul li,
+.aboutusNew ul li {
   position: relative;
   padding: 0 0 5px 20px;
   color: #fff;
@@ -1441,8 +1441,8 @@ h5.m_26 a:hover{
 .aboutusNew li {
   color: #555;
 }
-.aboutWrap li::before,
-.aboutusNew li::before {
+.aboutWrap ul li::before,
+.aboutusNew ul li::before {
   content: "";
   width: 7px;
   height: 7px;
@@ -1452,6 +1452,26 @@ h5.m_26 a:hover{
   top: 6px;
   left: 0;
 }
-.aboutusNew li::before {
+.aboutusNew ul li::before {
   background: #555;
+}
+.clientName,
+.address {
+  width: 530px;
+  display: inline-block;
+}
+.clientWrap {
+  padding: 50px 0;
+}
+.clientWrap ol {
+  padding-left: 25px;
+  margin-bottom: 40px;
+}
+.clientWrap ol li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.clientWrap ul li {
+  color: #555;
+
 }
