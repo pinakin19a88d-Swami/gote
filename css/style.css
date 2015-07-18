@@ -232,7 +232,12 @@ input[type="button"]{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-
+.bottomSpace5 {
+  margin-bottom: 25px;
+}
+.bottomSpace6 {
+  margin-bottom: 30px;
+}
 h1,h2,h3,h4,h5,h6{
 	padding:0 0;
 	margin:0 0;
@@ -757,6 +762,7 @@ ul.social-contacts {
   font-family: 'Marmelad-Regular';
   text-transform: capitalize;
  }
+
 .about h4 {
   font-size: 1.5em;
   margin: 0.5em 0;
@@ -810,9 +816,11 @@ ul.social-contacts {
   min-height: 400px;
 }
 .aboutus {
-  padding: 4em 0;
+  padding: 2em 0;
 }
-.aboutus h3 {
+.aboutus h3,
+.aboutusNew h3,
+.aboutWrap h3 {
     text-transform: capitalize;
   color: #394c53;
   color: #d3ad68;
@@ -822,6 +830,12 @@ ul.social-contacts {
  font-family: 'Marmelad-Regular';
  font-weight: bold;
   padding-bottom: 1.5em;
+ }
+ .aboutusNew h3,
+ .aboutWrap h3 {
+  text-transform: none;
+  text-align: left;
+  padding-bottom: 1em;
  }
 .about-grids1 {
   padding: 0;
@@ -1406,4 +1420,35 @@ h5.m_26 a:hover{
   -o-transition: 0.5s all;
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
+}
+.aboutWrap {
+  padding: 50px 0;
+  background: rgba(129, 108, 101, 1)
+}
+.aboutWrap ul,
+.aboutusNew ul {
+  list-style: none;
+}
+.aboutWrap li,
+.aboutusNew li {
+  position: relative;
+  padding: 0 0 5px 20px;
+  color: #fff;
+}
+.aboutusNew li {
+  color: #555;
+}
+.aboutWrap li::before,
+.aboutusNew li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.aboutusNew li::before {
+  background: #555;
 }
