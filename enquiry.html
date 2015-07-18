@@ -34,10 +34,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- header-banner -->
-		<div class="header head-top">
+		<div class="header enquiry-header head-top">
 			<div class="container">
 				<div class="header-top">
-					<div class="logo animated fadeInDown de2ms">
+					<div class="logo animated fadeInDown de2ms hidden-element">
 						<a href="index.html"><span class="logo-img animated fadeInUp de8ms"></a>
 					</div>
 						<!-- <div class="social-icons">
@@ -77,29 +77,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="mail">
 		<!-- container -->
 		<div class="container">
-		<h3>enquiry</h3>
-			<div class="col-md-6 col-md-offset-3 contact-form">
-					<form>
-						<input type="text" placeholder="Name" required="">
-						<input type="text" placeholder="Email" required="">
-						<input type="text" placeholder="Subject" required="">
-						<textarea placeholder="Message" required=""></textarea>
+			<h3>enquiry</h3>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 contact-form">
+					<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" placeholder="Name" id="name" name="name" required="">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Company" id="company" name="company" required="">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" placeholder="Address" id="address" name="address" required="">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="City" id="city" name="city" required="">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" placeholder="Mobile" id="mobile" name="mobile" required="">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Email" id="email" name="email" required="">
+							</div>
+						</div>
+						<textarea placeholder="Message" id="message" name="message" required=""></textarea>
 						<input type="submit" value="SEND">
+						<div id="form-messages" class="animated de4ms"></div>
 					</form>
 				</div>
-				
-				<div class="clearfix"> </div>
 			</div>
+				
+			<div class="clearfix"> </div>
 		</div>
-		<!-- //container -->
 	</div>
+	<!-- //container -->
+	<!-- </div> -->
 	<!-- //mail -->
 
 
 		<div class="footer-section">
 						<div class="container">
 							<div class="footer-top">
-						<p>Copyright &copy; 2015 <span>Apparatus.</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+						<!-- <p>Copyright &copy; 2015 <span>Apparatus.</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p> -->
 									</div>
 							<script type="text/javascript">
 						$(document).ready(function() {
@@ -119,6 +145,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 				</div>
 			</div>
+
+			<script src="js/appEnquiry.js"></script>
 
 </body>
 </html> 
