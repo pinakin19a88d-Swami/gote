@@ -1492,7 +1492,8 @@ h5.m_26 a:hover{
 }
 .clientName,
 .address {
-  width: 530px;
+  /*width: 530px;*/
+  width: 50%;
   display: inline-block;
 }
 .clientWrap {
@@ -1504,18 +1505,18 @@ h5.m_26 a:hover{
 }
 .clientWrap ol li {
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
 }
 .clientWrap ul li {
   color: #555;
 
 }
 .equipmentName {
-  width: 300px;
+  width: 260px;
   display: inline-block;
 }
 .number-of-equipments {
-  width: 100px;
+  width: 40px;
   display: inline-block;
 }
 .equipmentWrap {
@@ -1526,7 +1527,7 @@ h5.m_26 a:hover{
   margin-bottom: 40px;
 }
 .equipmentWrap ol li {
-  width: 400px;
+  width: 300px;
   padding: 10px 0;
   border-bottom: 1px solid #444;
 }
