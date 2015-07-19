@@ -232,6 +232,21 @@ input[type="button"]{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+.leftSpace1 {
+  margin-left: 5px;
+}
+.leftSpace2 {
+  margin-left: 10px;
+}
+.leftSpace3 {
+  margin-left: 15px;
+}
+.leftSpace4 {
+  margin-left: 20px;
+}
+.leftSpace5 {
+  margin-left: 25px;
+}
 .bottomSpace5 {
   margin-bottom: 25px;
 }
@@ -267,6 +282,9 @@ body{
 }
 .about-header {
   background:url(../images/about-banner.jpg) no-repeat 0px 0px;
+}
+.project-header {
+  background:url(../images/project-banner.jpg) no-repeat 0px 0px;
 }
 .gallery-header {
   background:url(../images/gallery-banner.jpg) no-repeat 0px 0px;
@@ -1492,12 +1510,17 @@ h5.m_26 a:hover{
 }
 .clientName,
 .address {
-  /*width: 530px;*/
-  width: 50%;
+  width: 800px;
   display: inline-block;
+}
+.address {
+  width: 250px;
 }
 .clientWrap {
   padding: 50px 0;
+}
+.clientWrap ul {
+  list-style: none;
 }
 .clientWrap ol {
   padding-left: 25px;
@@ -1573,4 +1596,7 @@ img.img-responsive:hover {
   letter-spacing: 1px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   color: #fff;
+}
+.ongoingProjects {
+  background: #eee;
 }
