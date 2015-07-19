@@ -55,7 +55,7 @@
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
 
-        $recipient = "chinmay412@gmail.com";
+        $recipient = "business@vjgotebrothers.com";
 
         // Set the email subject.
         $subject = "New Enquiry Form - $name";
@@ -71,8 +71,8 @@
 
         // Build the email headers.
         // $email_headers = "From: $nameOfCandidate <$email>";
-        $email_headers = "Reply-To: <chinmay412@gmail.com>\r\n"; 
-        $email_headers .= "Return-Path: <chinmay412@gmail.com>\r\n"; 
+        $email_headers = "Reply-To: <business@vjgotebrothers.com>\r\n"; 
+        $email_headers .= "Return-Path: <business@vjgotebrothers.com>\r\n"; 
         $email_headers .= "From: $name <$email>\r\n"; 
         $email_headers .= "Organization: My Organization\r\n"; 
         $email_headers .= "Content-Type: text/plain\r\n";
