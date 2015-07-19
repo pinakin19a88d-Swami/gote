@@ -1552,11 +1552,12 @@ h5.m_26 a:hover{
 .equipmentWrap ol li {
   width: 300px;
   padding: 10px 0;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #fff;
+  color: #fff;
 }
 
 img.img-responsive {
-  border-radius: 100%;
+  border-radius: 100% 50%;
   border: 6px solid #333;
   overflow: hidden;
   -webbkit-transition: all 0.4s ease;
